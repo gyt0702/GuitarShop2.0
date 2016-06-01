@@ -15,21 +15,24 @@
 <h2>搜索结果如下：</h2>
 <style>
 body{text-align: center}
+.table-a table{border-right:1px solid #00F;border-bottom:1px solid #00F}
+.table-a table td{border-top:1px solid #00F;border-left:1px solid #00F}
 </style>
-<table style="text-align:center ;" border="1">
-		<thead>
+<div class="table-a">
+<table border="0">
+		
 			<tr >
 
-				<th style="width:100px;"><h5 ><strong><font style="color:red" >系列号</font></strong></h5></th>
-				<th style="width:100px;"><h5 ><strong><font style="color:red">价格</font></strong></h5></th>
-				<th style="width:100px;"><h5 ><strong><font style="color:red">制造商</font></strong></h5></th>
-				<th style="width:100px;"><h5 ><strong><font style="color:red">模型</font></strong></h5></th>
-				<th style="width:100px;"><h5 ><strong><font style="color:red">种类</font></strong></h5></th>
-				<th style="width:100px;"><h5 ><strong><font style="color:red">背木</font></strong></h5></th>
-				<th style=";width:100px;"><h5 ><strong><font style="color:red">上木</font></strong></h5></th>
+				<td style="width:100px;"><h5 ><strong><font style="color:red" >系列号</font></strong></h5></td>
+				<td style="width:100px;"><h5 ><strong><font style="color:red">价格</font></strong></h5></td>
+				<td style="width:100px;"><h5 ><strong><font style="color:red">制造商</font></strong></h5></td>
+				<td style="width:100px;"><h5 ><strong><font style="color:red">模型</font></strong></h5></td>
+				<td style="width:100px;"><h5 ><strong><font style="color:red">种类</font></strong></h5></td>
+				<td style="width:100px;"><h5 ><strong><font style="color:red">背木</font></strong></h5></td>
+				<td style=";width:100px;"><h5 ><strong><font style="color:red">上木</font></strong></h5></td>
 			</tr>
-		</thead>
-		<tbody>
+		
+		
 	<% 
 		Inventory inventory = new Inventory();
 		inventory = (Inventory)request.getAttribute("result");
@@ -84,8 +87,9 @@ body{text-align: center}
 		<% 	
 		}
 	%>
-	</tbody>
+	
 </table>
+</div>
 
 <a href="SearchGuitar.jsp" style="display:inline-block;margin-top:20px;">返回重新搜索</a>
 </body>

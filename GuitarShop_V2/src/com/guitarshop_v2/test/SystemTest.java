@@ -37,7 +37,7 @@ public class SystemTest {
 		inventory.setGuitars(guitars);
 		Guitar tg = new Guitar();
 		GuitarSpec guitarSpec = new GuitarSpec();
-		guitarSpec.setType(type.b);
+		guitarSpec.setType(type.acoustic);
 		tg.setGuitarSpec(guitarSpec);
 		inventory.FindGuitars(tg);
 		System.out.print(inventory.FindGuitars(tg).size());
